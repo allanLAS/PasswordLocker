@@ -1,7 +1,7 @@
 import string
 import secrets
 import random
-import pyperclip
+
 
 class User:
     """
@@ -37,6 +37,14 @@ class User:
         
         #password length
         passlength = random.randint(8,16)
+
+        #joining the password characters
+
+        pass_word = ''.join(secrets.choice(characters)) for x in range(passLength))
+
+        ##return or print the generated password
+
+        return pass_word
 
 
 
