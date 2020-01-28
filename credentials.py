@@ -35,3 +35,19 @@ class Credentials:
         for credentials in cls.credential_list:
             if credentials.app_name == name:
                 return credentials
+    @classmethod
+    def credential_exists(cls,appname):
+        '''
+        Method that checks if a credential exists which uses appname and returns a boolean
+        '''
+        for Credentials in cls.credential_list:
+            if Credentials.app_name == appname:
+                return True
+        return False
+    @classmethod
+    def display_allcredentials(cls):
+        '''
+        Method that returns the credentials list
+        '''
+        return cls.credential_list
+    
