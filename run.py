@@ -34,4 +34,19 @@ def save_newcredential(credentials):
 ##delete a credential
 def deletecredential(credentials):
     credentials.deletecredential()
-    
+
+#using appname to find password
+def find_credentialbyappname(credentials):
+    return Credentials.find_credentialbyappname(credentials)
+
+ #checking if the credential exists
+ def credential_exists(appname):
+     return Credentials.credential_exists(appname)
+
+#display all credentials
+def display_allcredentials():
+    return Credentials.display_allcredentials()   
+
+##running
+def main():
+    print("Wagwan!Welcome to password locker.\n To proceed, use these short codes:\n ca - ")
