@@ -119,15 +119,15 @@ def main():
                     
                     elif short_codethree == 'dc':
                         if display_allcredentials():
-                            print("Here is a list of all your contacts")
+                            print("Here is a list of all your credentials")
                             print('\n')
 
                             for credentials in display_allcredentials():
-                                print(f"{credentials.appli_name} {credentials.acc_name} {credentials.pass_name}")  
+                                print(f"{credentials.application_name} {credentials.account_name} {credentials.password_name}")  
                                 print('\n')
                         else:
                             print('\n')
-                            print("You do not seem to have any credentials saved yet.")
+                            print("You do have any credentials saved.")
                             print('\n')
                     elif short_codethree == 'fc':
                         print("Enter the application name for the credential you want to search for.")
@@ -135,13 +135,13 @@ def main():
                         search_applicationname =input()
                         if credential_exist(search_applicationname):
                             search_credential = find_credentialbyappname(search_applicationname)
-                            print(f"{search_applicationname.appli_name} {search_applicationname.acc_name} {search_applicationname.pass_name}")                                             
+                            print(f"{search_applicationname.application_name} {search_applicationname.account_name} {search_applicationname.password_name}")                                             
                         else:
-                            print("That credential doesnot exist.")
+                            print("That credential doesn ot exist.")
                 else:
-                    print("Wrong username or password.Please try again.")
+                    print("Incorrect username or password.\n Please try again.")
                 
             elif short_codetwo == 'ex':
-                print("Bye Bye!")
+                print("Good day!")
                 break
             else:
