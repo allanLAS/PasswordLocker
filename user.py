@@ -34,7 +34,9 @@ class User:
         '''
         #the password should contain a capital letter, small letter, a digit and punctuation
         characters = string.ascii_uppercase + string.ascii_lowercase + string.digits + string.punctuation
+        
         #password length
+        passlength = random.randint(8,16)
 
 
 
