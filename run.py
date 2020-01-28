@@ -49,4 +49,21 @@ def display_allcredentials():
 
 ##running
 def main():
-    print("Wagwan!Welcome to password locker.\n To proceed, use these short codes:\n ca - ")
+    print("Wagwan!!Welcome to password locker.\n To proceed, use these short codes:\n ca - create an account using your own password \n ra - create an account using a randomly generated password \n ex - exit the application")
+    short_code = input().lower()
+    while True:
+
+        if short_code == 'ca':
+            print("Create an account using your own password")
+            
+            print("First Name")
+            first_name = input()
+
+            print("Last Name")
+            last_name = input()
+
+            print("User Name")
+            user_name = input()
+
+            print("Email")
+            email_address = in
