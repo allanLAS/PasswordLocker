@@ -40,7 +40,7 @@ def find_credentialbyappname(credentials):
     return Credentials.find_credentialbyappname(credentials)
 
  #checking if the credential exists
- def credential_exists(appname):
+def credential_exists(appname):
      return Credentials.credential_exists(appname)
 
 #display all credentials
@@ -108,10 +108,10 @@ def main():
                         print("Password")
                         password_name = input()
                             ###create and save a new credential
-                        save_newcredential(create_credential(appli_name,acc_name,pass_name))
+                        save_newcredential(create_credential(application_name,account_name,password_name))
                         print('\n')
                         print("-"*10)
-                        print(f"New Credential for {appli_name} created.")
+                        print(f"New Credential for {application_name} created.")
                         print('\n')
                         print("-"*10)
                         continue
