@@ -73,4 +73,8 @@ def main():
 
 
             #create and save a new account
-            save_user(create_user())
+            save_user(create_user(first_name,last_name,user_name,email_address,pass_word))
+            print('\n')
+            print(f"Eureka! New Account {user_name} successfully created!")
+            print('\n')
+            print("Proceed with these short codes: \n lg ")
