@@ -91,22 +91,22 @@ def main():
                 pass_wordin = input()
 
                 ###verify the username and password
-                if user_namein == u_name and pass_wordin == p_word:
-                    print("Correct username and password.\n To proceed use the following shortcodes: \n cc - create a new credential \n dc - display credentials \n fc - find a credential by inputing the appname \n rc - to delete a credential \n ex - exit the application")
+                if user_namein == user_name and pass_wordin == pass_word:
+                    print("Good.\n To proceed use the following shortcodes: \n cc - create a new credential \n dc - display credentials \n fc - find a credential by inputing the appname \n rc - to delete a credential \n ex - exit the application")
                     short_codethree = input().lower()
                     if short_codethree == 'cc':
                         print("-"*10)
-                        print("To create a new Credential,Input the following.")
-                        print("-"*10)
+                        print("To create a new Credential,Input the following:")
+                        
 
                         print("Application Name")
-                        appli_name = input()
+                        application_name = input()
 
                         print("Account Name")
-                        acc_name = input()
+                        account_name = input()
 
                         print("Password")
-                        pass_name = input()
+                        password_name = input()
                             ###create and save a new credential
                         save_newcredential(create_credential(appli_name,acc_name,pass_name))
                         print('\n')
