@@ -66,4 +66,10 @@ def main():
             user_name = input()
 
             print("Email")
-            email_address = in
+            email_address = input()
+
+            print("Password")
+            pass_word = input()
+
+            
+
