@@ -71,5 +71,6 @@ def main():
             print("Password")
             pass_word = input()
 
-            
 
+            #create and save a new account
+            save_user(create_user())
