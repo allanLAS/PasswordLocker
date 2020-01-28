@@ -27,3 +27,12 @@ class User:
         this method return a list of all the users
         '''
         return cls.user_list 
+
+     def generate_randompass():
+        '''
+        this method generates a random password
+        '''
+        #the password should contain a capital letter, small letter, a digit and punctuation
+
+        
+
