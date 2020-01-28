@@ -26,4 +26,7 @@ def generate_randompass():
 ##creating a new credential
 def create_credential(appname, accountname, passwordname):
     return new_credential
-    
+
+# saving the credentials
+def save_newcredential(Credentials):
+    credentials.save_newcredential()
