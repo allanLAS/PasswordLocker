@@ -28,5 +28,10 @@ def create_credential(appname, accountname, passwordname):
     return new_credential
 
 # saving the credentials
-def save_newcredential(Credentials):
+def save_newcredential(credentials):
     credentials.save_newcredential()
+
+##delete a credential
+def deletecredential(credentials):
+    credentials.deletecredential()
+    
