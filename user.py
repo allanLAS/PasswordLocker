@@ -28,7 +28,8 @@ class User:
         '''
         return cls.user_list 
 
-     def generate_randompass():
+    @classmethod
+    def generate_randompass(self):
         '''
         this method generates a random password
         '''
@@ -40,7 +41,7 @@ class User:
 
         #joining the password characters
 
-        pass_word = ''.join(secrets.choice(characters)) for x in range(passLength))
+        pass_word = ''.join(secrets.choice(characters) for x in range(passlength))
 
         ##return or print the generated password
 
